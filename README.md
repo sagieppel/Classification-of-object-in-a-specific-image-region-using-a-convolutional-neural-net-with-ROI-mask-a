@@ -6,7 +6,8 @@ Given an image and region of interest (ROI) mask as input, the net classifies th
 Figure 1. Segment-specific Classification using CNN
 
 For example, in Figure 1  the net is given the same image twice with different masks and output the object class of the segment marked by each mask.
-
+This net achive 83% accuracy on the coco objects data set.
+For more details see [Classifying a specific image region using convolutional nets with an ROI mask as input](https://arxiv.org/pdf/1812.00291.pdf)
 
 
 ![](/Figure2.png)
