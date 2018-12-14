@@ -56,8 +56,5 @@ This network was run with [Python 3.6 Anaconda](https://www.anaconda.com/downloa
 5. Run the script
 
 
-# Results
-
-Trained net give about 85% mean class accuracy on the coco evaluation set
 
 
