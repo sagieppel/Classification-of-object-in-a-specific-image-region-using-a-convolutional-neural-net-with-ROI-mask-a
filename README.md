@@ -18,7 +18,7 @@ Figure 2.a Standard Classification net, b. Region specific classification net
 ## Architecture and attention mechanism.
 The net architecture can be seen in Figure 2.b. The net main branch consists of standard image classification neural net (Resnet 50). 
 The side branch responsible for focusing the attention of the classifier net on the input mask region, in order to achieve region specific classification of the mask segment.
-As shown in Figure 2.b attention focusing is done by adding the attention map to the first layer of net. 
+As shown in Figure 2.b attention focusing is done by taking the dot product the attention map and the first layer of net. 
   
 
 # Using the net.
