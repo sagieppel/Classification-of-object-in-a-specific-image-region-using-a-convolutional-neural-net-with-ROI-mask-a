@@ -12,7 +12,7 @@ This net achive 83% accuracy on the coco objects data set.
 For more details see [Classifying a specific image region using convolutional nets with an ROI mask as input](https://arxiv.org/pdf/1812.00291.pdf)
 
 
-![](/Figure2.png)
+![](/FIgure2.png)
 Figure 2.a Standard Classification net, b. Region specific classification net
 
 ## Architecture and attention mechanism.
