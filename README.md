@@ -23,7 +23,7 @@ As shown in Figure 2.b attention focusing is done by taking the dot product the 
 
 # Using the net.
 ## Setup
-This network was run with [Python 3.6 Anaconda](https://www.anaconda.com/download/) package and [Pytorch 0.4](https://pytorch.org/).  
+This network was run with [Python 3.6 Anaconda](https://www.anaconda.com/download/) package and [Pytorch 1](https://pytorch.org/).  
 
 ## Prediction/Inference
 
