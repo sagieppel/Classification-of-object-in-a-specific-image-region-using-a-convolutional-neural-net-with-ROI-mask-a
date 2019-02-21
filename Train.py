@@ -82,10 +82,10 @@ for itr in range(1,MAX_ITERATION):
         print("model saved")
 #......................Write and display train loss..........................................................................
     if itr % 10==0: # Display train loss
-        print("Step "+str(itr)+" Train Loss="+str(float(np.array(Loss.data)))+" Runnig Average Loss="+str(AVGLoss))
+        print("Step "+str(itr)+" Train Loss="+str(float(Loss.data.cpu().numpy()))+" Runnig Average Loss="+str(AVGLoss))
         #Write train loss to file
         with open(TrainLossTxtFile, "a") as f:
-            f.write("\n"+str(itr)+"\t"+str(float(np.array(Loss.data)))+"\t"+str(AVGLoss))
+            f.write("\n"+str(itr)+"\t"+str(float(Loss.data.cpu().numpy()))+"\t"+str(AVGLoss))
             f.close()
 ##################################################################################################################################################
 
