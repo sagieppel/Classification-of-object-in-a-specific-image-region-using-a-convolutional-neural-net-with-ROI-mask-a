@@ -70,8 +70,8 @@ for itr in range(1,MAX_ITERATION):
     Net.zero_grad()
     OneHotLabels=torch.autograd.Variable(torch.from_numpy(LabelsOneHot).cuda(), requires_grad=False)
     Loss = -torch.mean((OneHotLabels * torch.log(Prob + 0.0000001)))  # Calculate cross entropy loss
-    if AVGLoss==0:  AVGLoss=float(np.array(Loss.data)) #Caclculate average loss for display
-    else: AVGLoss=AVGLoss*0.999+0.001*float(np.array(Loss.data))
+    if AVGLoss==0:  AVGLoss=float(Loss.data.cpu().numpy()) #Caclculate average loss for display
+    else: AVGLoss=AVGLoss*0.999+0.001*float(Loss.data.cpu().numpy())
     Loss.backward() # Backpropogate loss
     optimizer.step() # Apply gradient decend change weight
     torch.cuda.empty_cache()

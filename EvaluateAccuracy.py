@@ -70,7 +70,7 @@ for c in range(Reader.NumCats):
                   # ..................................................................
                   Prob, Lb = Net.forward(Images[i:i + 1], ROI=SegmentMask[i:i + 1],
                                          EvalMode=True)  # Run net inference and get prediction
-                  PredLb = np.array(Lb.data)
+                  PredLb = Lb.data.cpu().numpy()
                   # .......................................................................................
                   LbSize = SegmentMask[i].sum()
                   SzInd = -1

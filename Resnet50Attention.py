@@ -48,7 +48,7 @@ class Net(nn.Module):# Net for region based segment classification
 
 #------------------------------- Convert from numpy to pytorch-------------------------------------------------------
                 InpImages = torch.autograd.Variable(torch.from_numpy(Images), requires_grad=False).transpose(2,3).transpose(1, 2).type(torch.FloatTensor)
-                ROImap = torch.autograd.Variable(torch.from_numpy(ROI.astype(np.float)), requires_grad=False,volatile=EvalMode).unsqueeze(dim=1).type(torch.FloatTensor)
+                ROImap = torch.autograd.Variable(torch.from_numpy(ROI.astype(np.float)), requires_grad=False).unsqueeze(dim=1).type(torch.FloatTensor)
                 if self.UseGPU == True: # Convert to GPU
                     InpImages = InpImages.cuda()
                     ROImap = ROImap.cuda()
