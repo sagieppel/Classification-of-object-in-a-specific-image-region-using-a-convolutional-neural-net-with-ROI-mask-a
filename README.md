@@ -14,6 +14,7 @@ For more details see [Classifying a specific image region using convolutional ne
 
 ![](/FIgure2.png)
 Figure 2.a Standard Classification net, b. Region specific classification net
+[*****Stronger but harder to use version of this net can be found here******](https://github.com/sagieppel/Generator-evaluator-selector-net-a-modular-approach-for-panoptic-segmentation/tree/master/Classification)
 
 ## Architecture and attention mechanism.
 The net architecture can be seen in Figure 2.b. The net main branch consists of standard image classification neural net (Resnet 50). 
