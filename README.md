@@ -11,10 +11,11 @@ This net achive 83% accuracy on the coco objects data set.
 
 For more details see [Classifying a specific image region using convolutional nets with an ROI mask as input](https://arxiv.org/pdf/1812.00291.pdf)
 
+[*****Stronger but harder to use version of this net can be found here******](https://github.com/sagieppel/Generator-evaluator-selector-net-a-modular-approach-for-panoptic-segmentation/tree/master/Classification)
 
 ![](/FIgure2.png)
 Figure 2.a Standard Classification net, b. Region specific classification net
-[*****Stronger but harder to use version of this net can be found here******](https://github.com/sagieppel/Generator-evaluator-selector-net-a-modular-approach-for-panoptic-segmentation/tree/master/Classification)
+
 
 ## Architecture and attention mechanism.
 The net architecture can be seen in Figure 2.b. The net main branch consists of standard image classification neural net (Resnet 50). 
