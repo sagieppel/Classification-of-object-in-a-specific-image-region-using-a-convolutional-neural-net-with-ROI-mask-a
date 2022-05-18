@@ -56,7 +56,7 @@ class COCOReader:
             ImgNum = np.random.randint(len(self.ImgIds[ClassNum]))  # Choose Random image
             ImgData = self.coco.loadImgs(self.ImgIds[ClassNum][ImgNum])[0]  # Pick image data
             image_name = ImgData['file_name']  # Get image name
-            Img = misc.imread(self.ImageDir + "/" + image_name)  # Load Image
+            Img = cv2.imread(self.ImageDir + "/" + image_name)  # Load Image
             if (Img.ndim==2): #If grayscale turn to rgb
                   Img=np.expand_dims(Img,3)
                   Img = np.concatenate([Img, Img, Img], axis=2)
