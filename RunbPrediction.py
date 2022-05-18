@@ -34,8 +34,7 @@ Net.eval()
 #--------------------Read Image and segment mask---------------------------------------------------------------------------------
 Images=cv2.imread(ImageFile)
 ROIMask=cv2.imread(ROIMaskFile,0)
-#Images=plt.imread(ImageFile)*255 # pixel value need to be in the range of 0-255
-#ROIMask=plt.imread(ROIMaskFile)
+
 
 imgplot = plt.imshow(Images)
 plt.show()
