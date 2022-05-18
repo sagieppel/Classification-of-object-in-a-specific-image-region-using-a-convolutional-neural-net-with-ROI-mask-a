@@ -32,8 +32,10 @@ Net.load_state_dict(torch.load(Trained_model_path)) #Load net
 if UseCuda: Net.cuda()
 Net.eval()
 #--------------------Read Image and segment mask---------------------------------------------------------------------------------
-Images=plt.imread(ImageFile)
-ROIMask=plt.imread(ROIMaskFile)
+Images=cv2.imread(ImageFile)
+ROIMask=cv2.imread(ROIMaskFile,0)
+#Images=plt.imread(ImageFile)*255 # pixel value need to be in the range of 0-255
+#ROIMask=plt.imread(ROIMaskFile)
 
 imgplot = plt.imshow(Images)
 plt.show()
