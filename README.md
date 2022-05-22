@@ -29,16 +29,18 @@ This network was run with [Python 3.6 Anaconda](https://www.anaconda.com/downloa
 
 ## Prediction/Inference
 
-1. Train net or download pre trained net weight from [here](https://drive.google.com/open?id=1IfP3Ew37VEcxf2JkdnpHs5vj5RHdSuCu).
+1. Train net or download pre trained net weight from [here](https://icedrive.net/s/z5YNRgj6haYG41hS6bk4TYT2FuuQ).
 2. Open RunPrediction.py 
 3. Set Path to the trained net weights  file in: Trained_model_path 
 4. Run script to get prediction on the test set
 4. Paths of input image and input ROI mask is given in ROIMaskFile and InputMaskFile parameters.
 5. Test image and ROI maps are supplied in the Test folder
+
 ## For training and evaluating download COCO dataset and API
 
-1. Download and extract the [COCO 2014 train images and Train/Val annotations](http://cocodataset.org/#download)
-2. Download and make the COCO python API base on the instructions in (https://github.com/cocodataset/cocoapi). Copy the pycocotools from cocodataset/cocoapi to the code folder (replace the existing pycocotools folder in the code). Note that the code folder already contain pycocotools folder with a compiled API that may or may not work as is.
+1. Download and extract the [COCO 2017 train images and Train/Val annotations](http://cocodataset.org/#download)
+2. Download and make the COCO python API base on the instructions in (https://github.com/cocodataset/cocoapi). 
+3. Copy the pycocotools from cocodataset/cocoapi to the code folder (replace the existing pycocotools folder in the code). Note that the code folder already contain pycocotools folder with a compiled API that may or may not work as is.
 
 ## Training
 
