@@ -29,7 +29,7 @@ This network was run with [Python 3.6 Anaconda](https://www.anaconda.com/downloa
 
 ## Prediction/Inference
 
-1. Train net or download pre trained net weight from [here](https://icedrive.net/s/z5YNRgj6haYG41hS6bk4TYT2FuuQ).
+1. Train net or download pre trained net weight from [here](https://icedrive.net/s/z5YNRgj6haYG41hS6bk4TYT2FuuQ) or download net with weight set (run out of the box) from [1](https://e1.pcloud.link/publink/show?code=XZQIJRZl5N2m282Fz7cS7TMiammcYK8E2Rk) or [2](https://icedrive.net/s/w3b8wQQ3VVPY89WahY1Gk6TPZA3z).
 2. Open RunPrediction.py 
 3. Set Path to the trained net weights  file in: Trained_model_path 
 4. Run script to get prediction on the test set
@@ -53,7 +53,7 @@ This network was run with [Python 3.6 Anaconda](https://www.anaconda.com/downloa
 
 ## Evaluating 
 
-1. Train net or Download pre trained net weight from [here](https://drive.google.com/open?id=1IfP3Ew37VEcxf2JkdnpHs5vj5RHdSuCu).
+1. Train net or Download pre trained net weight from [here](https://icedrive.net/s/z5YNRgj6haYG41hS6bk4TYT2FuuQ) or download net with weight set (run out of the box) from [1](https://e1.pcloud.link/publink/show?code=XZQIJRZl5N2m282Fz7cS7TMiammcYK8E2Rk) or [2](https://icedrive.net/s/w3b8wQQ3VVPY89WahY1Gk6TPZA3z)..
 2. Open EvaluateAccuracy.py
 3. Set Train coco image folder path  in: TestImageDir
 4. Set the path to the coco Train annotation json file in: TestAnnotationFile
